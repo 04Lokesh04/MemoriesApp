@@ -1,0 +1,67 @@
+.postmedia {
+  height: 60px;
+  padding-top: 56.25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.border {
+  border: solid;
+}
+
+.fullHeightCard {
+  height: 100%;
+}
+
+.postcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+
+.grid {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.title {
+  padding: 0 16px;
+}
+
+.cardActions {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardButtonActions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+
+}
+  
