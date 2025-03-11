@@ -10,7 +10,12 @@ dotenv.config()
 
 app.use(bodyParser.json({limit:"30mb", extended:true}))
 app.use(bodyParser.urlencoded  ({limit:"30mb", extended:true}))
-app.use(cors());
+const corsOptions = {
+    origin: 'https://nostalgiahub.onrender.com', 
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], 
+    credentials: true 
+};
+app.use(cors(corsOptions));
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 const CONNECTION_URL=process.env.CONNECTION_URL
